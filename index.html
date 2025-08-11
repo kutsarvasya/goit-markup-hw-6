@@ -50,7 +50,12 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn btn-reset" type="button" data-menu-open>
+        <button
+          class="burger-btn btn-reset js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#burger"></use>
           </svg>
@@ -716,9 +721,9 @@
         </form>
       </div>
     </div>
-    <div class="mobile-menu">
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
       <div class="container mobile-menu-container">
-        <button class="mobile-menu-close" type="button">
+        <button class="mobile-menu-close js-close-menu" type="button">
           <svg class="mobile-menu-close-icon" width="8" height="8">
             <use href="./images/icons.svg#close"></use>
           </svg>
@@ -805,5 +810,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
